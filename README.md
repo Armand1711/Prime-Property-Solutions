@@ -12,6 +12,8 @@ Screenshot of the homepage showing the company background and purpose.
 
 Screenshot of the Offer on Property page where users can submit offers for properties.
 
+
+
 Features
 Homepage: Provides background information about the company and its purpose.
 Property Listings: Displays properties available for purchase in a visually appealing card layout.
