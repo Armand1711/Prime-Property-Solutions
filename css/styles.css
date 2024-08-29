@@ -1,0 +1,303 @@
+/* Reset and Box Sizing */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base HTML and Body Styles */
+html {
+    font-size: 62.5%; /* 1rem = 10px for easier calculations */
+    font-family: "Arial", Helvetica, sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-size: 1.6rem; /* 16px */
+    line-height: 1.5;
+    color: #333;
+    background-color: #f5f5f5;
+    font-weight: 400;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #003366; /* Property24 blue tone */
+}
+
+p {
+    margin-bottom: 1.5rem;
+    color: #666;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #003366; /* Property24 header background */
+    color: #fff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Yellow highlight on hover */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.search-bar input,
+.search-bar select {
+    border: none;
+    padding: 1rem;
+    margin-right: 1rem;
+    flex: 1;
+    border-radius: 0.5rem;
+    background-color: #f0f0f0;
+}
+
+.search-bar button {
+    padding: 1rem 2rem;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #002244; /* Darker shade on hover */
+}
+
+/* Main Content and Listings Container */
+main {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Listings Container */
+.listings-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Listing Card */
+.listing-card {
+    border: 1px solid #ddd;
+    border-radius: 0.8rem;
+    background-color: #fff;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.listing-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Image */
+.listing-card img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Card Content */
+.listing-card-body {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.listing-card-body h2 {
+    margin: 1rem 0;
+    font-size: 1.8rem;
+    color: #003366;
+}
+
+.listing-card-body p {
+    margin: 0.5rem 0;
+    font-size: 1.4rem;
+    color: #666;
+}
+
+/* Price Tag */
+.listing-card-price {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+/* View Details Button */
+.listing-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #003366;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.listing-card a:hover {
+    background-color: #002244;
+}
+
+/* Property Image Gallery */
+.property-gallery {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.property-gallery img {
+    width: 100%;
+    max-width: 48%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.property-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Property Details Section */
+.property-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.property-detail {
+    flex: 1 1 45%;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Contact Information */
+.contact-info {
+    background-color: #003366;
+    color: #fff;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.contact-info a:hover {
+    background-color: #002244;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .listings-container {
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    }
+
+    .property-gallery img {
+        max-width: 100%;
+    }
+
+    .listing-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-bar {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    .property-details {
+        flex-direction: column;
+    }
+
+    .property-detail {
+        flex: 1 1 100%;
+        margin-bottom: 1rem;
+    }
+
+    .property-gallery {
+        flex-direction: column;
+    }
+
+    .listing-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        margin: 0 1rem;
+        font-size: 1.4rem;
+    }
+
+    .listing-card-body h2 {
+        font-size: 1.6rem;
+    }
+
+    .listing-card-body p {
+        font-size: 1.2rem;
+    }
+}
