@@ -17,7 +17,11 @@ $resultCheck = $conn->query($sqlCheck);
 if ($resultCheck->num_rows > 0) {
     $owner = $resultCheck->fetch_assoc();
     if ($owner['user_id'] == $user_id) {
-        // First delete comments related to the property
+        // First, delete purchases related to the property to prevent foreign key constraint issues
+        $sqlDeletePurchases = "DELETE FROM purchases WHERE property_id = $property_id";
+        $conn->query($sqlDeletePurchases);
+
+        // Then delete comments related to the property
         $sqlDeleteComments = "DELETE FROM comments WHERE property_id = $property_id";
         $conn->query($sqlDeleteComments);
 
