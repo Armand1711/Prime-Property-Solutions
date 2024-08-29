@@ -7,10 +7,23 @@ CSS3
 JavaScript
 PHP
 MySQL
-Screenshots
-Screenshot of the homepage showing the company background and purpose.
 
-Screenshot of the Offer on Property page where users can submit offers for properties.
+Screenshots
+![Screenshot 2024-08-29 163831](https://github.com/user-attachments/assets/565ca7ae-1897-44c8-bc5c-c9d457527b3d)
+
+![Screenshot 2024-08-29 163809](https://github.com/user-attachments/assets/1f4dd93a-52e0-4373-b489-b754c6fb3c09)
+
+![Screenshot 2024-08-29 163749](https://github.com/user-attachments/assets/716168bc-6aa2-40d7-b7ad-a72c97a7ce4c)
+
+![Screenshot 2024-08-29 163729](https://github.com/user-attachments/assets/8d69dc6c-3cd5-4f0f-a584-d9abb43eab50)
+
+
+
+Mockups
+![image](https://github.com/user-attachments/assets/4992f717-9a4d-46c3-9727-4e5313644641)
+
+
+![image](https://github.com/user-attachments/assets/0fc46035-edba-4a49-9b6b-5aa727ba5f02)
 
 
 
@@ -77,3 +90,6 @@ Future Implementations
 Add property filters based on location, price range, and other criteria.
 Integrate with Google Maps for property locations.
 Add admin functionality to manage property listings.
+
+Demo Video Link: 
+https://drive.google.com/drive/folders/1y1Cjbu5Tb-UqlUTwd8iPsiNzKkcswJyn?usp=drive_link
